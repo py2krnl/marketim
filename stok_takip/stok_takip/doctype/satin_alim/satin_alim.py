@@ -6,7 +6,6 @@ from frappe.model.document import Document
 
 class SatinAlim(Document):
 	def before_save(self):
-		print("\n\n\n")
 		genel_toplam = 0
 		for child_grid in self.urun_child:
 			child_doc = frappe.get_doc('Urun', child_grid.urun)
@@ -14,4 +13,3 @@ class SatinAlim(Document):
 			child_grid.toplam_fiyat = urun_toplam_fiyat
 			genel_toplam += urun_toplam_fiyat
 		self.genel_toplam = genel_toplam
-		print("\n\n\n")
