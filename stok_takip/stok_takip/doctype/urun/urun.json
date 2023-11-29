@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "\u00dcr\u00fcn-.#####",
+ "creation": "2023-11-22 15:39:10.014678",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "urun_adi",
+  "urun_aciklama",
+  "urun_adedi",
+  "urun_fiyati",
+  "urun_barkodu"
+ ],
+ "fields": [
+  {
+   "fieldname": "urun_adi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u00dcr\u00fcn Ad\u0131",
+   "reqd": 1
+  },
+  {
+   "fieldname": "urun_aciklama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u00dcr\u00fcn A\u00e7\u0131klama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "urun_adedi",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "\u00dcr\u00fcn Adedi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "urun_fiyati",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "\u00dcr\u00fcn Fiyat\u0131",
+   "reqd": 1
+  },
+  {
+   "fieldname": "urun_barkodu",
+   "fieldtype": "Barcode",
+   "label": "\u00dcr\u00fcn Barkodu",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-27 17:19:51.758944",
+ "modified_by": "Administrator",
+ "module": "Stok Takip",
+ "name": "Urun",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

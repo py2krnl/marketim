@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "SatinAlim-.#####",
+ "creation": "2023-11-22 15:43:46.699194",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "satici",
+  "column_break_h8nai",
+  "tarih",
+  "section_break_shjci",
+  "urun_child",
+  "column_break_whqii",
+  "genel_toplam"
+ ],
+ "fields": [
+  {
+   "fieldname": "satici",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sat\u0131c\u0131",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tarih",
+   "fieldtype": "Date",
+   "label": "Tarih",
+   "reqd": 1
+  },
+  {
+   "fieldname": "urun_child",
+   "fieldtype": "Table",
+   "label": "urun_child",
+   "options": "urun_child",
+   "reqd": 1
+  },
+  {
+   "fieldname": "genel_toplam",
+   "fieldtype": "Float",
+   "label": "Genel Toplam",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_shjci",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_whqii",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_h8nai",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-23 19:52:19.394139",
+ "modified_by": "Administrator",
+ "module": "Stok Takip",
+ "name": "Satin Alim",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

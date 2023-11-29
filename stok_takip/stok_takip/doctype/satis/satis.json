@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Satis-.#####",
+ "creation": "2023-11-22 16:01:22.623937",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tarih",
+  "column_break_brodz",
+  "kar_payi",
+  "section_break_dpc4t",
+  "elde_edilen_kazanc",
+  "doviz_turu",
+  "column_break_dmsq3",
+  "satis_genel_toplam",
+  "section_break_pq2ug",
+  "urun_satis_tablo"
+ ],
+ "fields": [
+  {
+   "fieldname": "tarih",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tarih",
+   "reqd": 1
+  },
+  {
+   "fieldname": "urun_satis_tablo",
+   "fieldtype": "Table",
+   "label": "\u00dcr\u00fcn Sat\u0131\u015f Tablosu",
+   "options": "urun_child",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kar_payi",
+   "fieldtype": "Currency",
+   "label": "K\u00e2r Pay\u0131 (%)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_brodz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_pq2ug",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_dpc4t",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "satis_genel_toplam",
+   "fieldtype": "Currency",
+   "label": "Genel Toplam",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dmsq3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "elde_edilen_kazanc",
+   "fieldtype": "Currency",
+   "label": "Elde Edilen Kazan\u00e7",
+   "options": "doviz_turu",
+   "read_only": 1
+  },
+  {
+   "fieldname": "doviz_turu",
+   "fieldtype": "Link",
+   "label": "DT",
+   "options": "Currency"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-23 20:35:25.068773",
+ "modified_by": "Administrator",
+ "module": "Stok Takip",
+ "name": "Satis",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
