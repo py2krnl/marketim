@@ -33,13 +33,13 @@
   {
    "fieldname": "urun_child",
    "fieldtype": "Table",
-   "label": "urun_child",
+   "label": "\u00dcr\u00fcn Sat\u0131n Al\u0131m Tablosu",
    "options": "urun_child",
    "reqd": 1
   },
   {
    "fieldname": "genel_toplam",
-   "fieldtype": "Float",
+   "fieldtype": "Currency",
    "label": "Genel Toplam",
    "read_only": 1
   },
@@ -58,7 +58,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-23 19:52:19.394139",
+ "modified": "2023-11-29 18:02:59.620307",
  "modified_by": "Administrator",
  "module": "Stok Takip",
  "name": "Satin Alim",
