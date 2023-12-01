@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "\u00dcr\u00fcn-.#####",
  "creation": "2023-11-22 15:39:10.014678",
@@ -9,10 +10,13 @@
  "engine": "InnoDB",
  "field_order": [
   "urun_adi",
+  "urun_resim",
   "urun_aciklama",
   "urun_adedi",
   "urun_fiyati",
-  "urun_barkodu"
+  "urun_barkodu",
+  "route",
+  "published"
  ],
  "fields": [
   {
@@ -48,11 +52,30 @@
    "fieldtype": "Barcode",
    "label": "\u00dcr\u00fcn Barkodu",
    "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "urun_resim",
+   "fieldtype": "Attach Image",
+   "label": "\u00dcr\u00fcn Resim"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "published",
  "links": [],
- "modified": "2023-11-27 17:19:51.758944",
+ "modified": "2023-12-01 19:05:56.057823",
  "modified_by": "Administrator",
  "module": "Stok Takip",
  "name": "Urun",
@@ -73,6 +96,7 @@
   }
  ],
  "quick_entry": 1,
+ "route": "urunlerim",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

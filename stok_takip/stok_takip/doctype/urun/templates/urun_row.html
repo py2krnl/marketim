@@ -1,0 +1,15 @@
+<div>
+	<div class="py-8 row border border-1  mt-3">
+		<div class="col-sm-1">
+		<img alt="{{ doc.name }}" src="{{ urun_resim }}"/>
+		</div>
+		<div class="col">
+			<a class="font-size-lg" href="{{ doc.route }}">{{ urun_adi }}</a>
+			<br/>
+			<p class="text-muted">{{ urun_aciklama }}</p>
+			<button class="btn btn-primary">Sepete Ekle {{ urun_fiyati }} ₺</button>
+		</div>
+		</div>
+		<!-- <a href="{{ doc.route }}">{{ doc.title or doc.name }}</a> -->
+</div>
+<!-- this is a sample default list template -->
