@@ -1,7 +1,36 @@
 {% extends "templates/web.html" %}
 
 {% block page_content %}
-<h1>{{ title }}</h1>
+
+
+<div class="py-20 row">
+    <div class="col-sm-2">
+    <img alt="{{ title }}" src="{{ urun_resim }}"/>
+    </div>
+    <div class="col">
+    <h1>{{ urun_adi }}</h1>
+    <div>
+
+            {%- if urun_adedi > 0 -%}
+
+            <span class="badge badge-success">Mevcut</span>
+            {%- elif urun_adedi <= 0 -%}
+
+            <span class="badge badge-danger">Kalmadı</span>
+
+            {%- endif -%}
+
+    </div>
+    <br/>
+        <p class="lead">Ürün Açıklaması: {{ urun_aciklama }}</p>
+        <div class="mt-4">
+            <div>Ürün Fiyatı: {{ urun_fiyati }} ₺</div>
+            <div>Ürün Adedi: {{ urun_adedi }}</strong></div>
+        </div>
+            {{ urun_barkodu }}
+    </div>
+</div>
+
 {% endblock %}
 
 <!-- this is a sample default web page template -->
